@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DTE Bank - powered by Watson AI</title>
+    <img src = "dte_bank_bg.png"
+    	width="auto" height="1860"
+         alt = "DTE Bank" />
+  
+         <script>
+          window.watsonAssistantChatOptions = {
+            integrationID: "26e27c8b-d572-4419-a8ee-cfbba7053dcd", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "bc5d35d9-8f7d-4c76-b852-ee85cc3ebdb2", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+          };
+          setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+          });
+        </script>
+
+  
+</head>
+
+<body>
+
+</body>
+
+</html>
